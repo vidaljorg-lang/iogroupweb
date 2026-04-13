@@ -46,7 +46,7 @@ const Proyectos = () => {
     {
       titulo: "Proyecto 7",
       categoria: "E-learning",
-      imagen: "https://images.unsplash.com/photo-1584697964403-5a7c8c7b6bfa",
+      imagen: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7",
       video: "https://player.vimeo.com/video/76979871"
     },
     {
@@ -58,7 +58,7 @@ const Proyectos = () => {
     {
       titulo: "Proyecto 9",
       categoria: "Videos",
-      imagen: "https://images.unsplash.com/photo-1612831455543-7f6c9d7f4f63",
+      imagen: "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
       video: "https://player.vimeo.com/video/76979871"
     }
   ];
