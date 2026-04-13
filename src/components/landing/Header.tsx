@@ -38,7 +38,7 @@ const Header = ({ active }: { active?: string }) => {
             </a>
           ))}
           <a
-            href="#contacto"
+            href="/#contacto"
             className="text-sm font-medium bg-primary text-primary-foreground px-5 py-2 rounded-lg hover:opacity-90 transition-opacity"
           >
             Solicitar reunión
@@ -67,7 +67,7 @@ const Header = ({ active }: { active?: string }) => {
               </a>
             ))}
             <a
-              href="#contacto"
+              href="/#contacto"
               className="text-sm font-medium bg-primary text-primary-foreground px-5 py-2 rounded-lg text-center hover:opacity-90 transition-opacity"
               onClick={() => setMobileOpen(false)}
             >
