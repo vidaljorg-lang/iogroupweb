@@ -138,9 +138,7 @@ const proyectosFiltrados =
               </button>
             </div>
           </div>
-        </div>
       )}
-    </div>
   );
 };
 
