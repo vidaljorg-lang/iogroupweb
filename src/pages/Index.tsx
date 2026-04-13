@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Header from "@/components/landing/Header";
 import Hero from "@/components/landing/Hero";
 import Propuesta from "@/components/landing/Propuesta";
@@ -13,6 +14,18 @@ import FinalCTA from "@/components/landing/FinalCTA";
 import Footer from "@/components/landing/Footer";
 
 const Index = () => {
+  useEffect(() => {
+  if (window.location.hash) {
+    const id = window.location.hash.replace("#", "");
+    const el = document.getElementById(id);
+
+    if (el) {
+      setTimeout(() => {
+        el.scrollIntoView({ behavior: "smooth" });
+      }, 100);
+    }
+  }
+}, []);
   return (
     <div className="min-h-screen bg-background">
       <Header />
