@@ -9,6 +9,7 @@ const Header = () => {
     { label: "Metodología", href: "#metodologia" },
     { label: "Plataformas", href: "#plataformas" },
     { label: "Clientes", href: "#clientes" },
+    { label: "Proyectos", href: "/proyectos" },
   ];
 
   return (
