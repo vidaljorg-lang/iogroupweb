@@ -97,24 +97,29 @@ const Proyectos = () => {
       </div>
 
       {/* GRID */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-10 pb-20">
-        {proyectosFiltrados.map((p, i) => (
-          <div
-            key={i}
-            className="bg-white rounded-xl shadow-md hover:shadow-xl transition cursor-pointer border-b-4 border-orange-500"
-            onClick={() => setVideoActivo(p.video)}
-          >
-            <img
-              src={p.imagen}
-              alt={p.titulo}
-              className="rounded-t-xl w-full h-56 object-cover"
-            />
-            <div className="p-4">
-              <p className="font-semibold">{p.titulo}</p>
-            </div>
-          </div>
-        ))}
+      <div className="max-w-6xl mx-auto px-6 pb-20">
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+    {proyectosFiltrados.map((p, i) => (
+      <div
+        key={i}
+        className="bg-white rounded-xl shadow-md hover:shadow-xl transition cursor-pointer border-b-4 border-orange-500"
+        onClick={() => setVideoActivo(p.video)}
+      >
+        <img
+          src={p.imagen}
+          alt={p.titulo}
+          className="rounded-t-xl w-full h-56 object-cover"
+        />
+
+        <div className="p-4">
+          <p className="font-semibold">{p.titulo}</p>
+        </div>
       </div>
+    ))}
+
+  </div>
+</div>
 
       {/* MODAL */}
       {videoActivo && (
