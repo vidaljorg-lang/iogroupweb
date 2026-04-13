@@ -1,3 +1,4 @@
+import Header from "../components/landing/Header";
 import { useState } from "react";
 
 const Proyectos = () => {
@@ -70,9 +71,10 @@ const Proyectos = () => {
 
   return (
     <div className="min-h-screen bg-white text-gray-800">
-
+<Header active="proyectos" />
+      
       {/* HEADER */}
-      <div className="text-center py-16 px-6">
+<div className="text-center pt-24 pb-16 px-6">
         <h1 className="text-4xl font-bold mb-4">Nuestros Proyectos</h1>
         <p className="max-w-2xl mx-auto text-gray-600">
           Descubre algunos de nuestros casos, experiencias y soluciones desarrolladas para nuestros clientes.
