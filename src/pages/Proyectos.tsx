@@ -121,7 +121,7 @@ const proyectosFiltrados =
       </div>
 
       {/* MODAL VIDEO */}
-      {videoActivo && (
+           {videoActivo && (
         <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50">
           <div className="bg-white rounded-lg overflow-hidden w-full max-w-4xl">
             <iframe
@@ -140,7 +140,6 @@ const proyectosFiltrados =
           </div>
         </div>
       )}
-
     </div>
   );
 };
