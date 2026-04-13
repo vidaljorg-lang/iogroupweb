@@ -28,7 +28,11 @@ const Header = ({ active }: { active?: string }) => {
             <a
               key={item.href}
               href={item.href}
-              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+              className={`text-sm transition-colors ${
+  active === item.label.toLowerCase()
+    ? "text-orange-500 font-semibold"
+    : "text-muted-foreground hover:text-foreground"
+}`}
             >
               {item.label}
             </a>
