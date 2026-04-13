@@ -5,11 +5,11 @@ const Header = ({ active }: { active?: string }) => {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const navItems = [
-    { label: "Soluciones", href: "#soluciones" },
-    { label: "Metodología", href: "#metodologia" },
-    { label: "Plataformas", href: "#plataformas" },
-    { label: "Clientes", href: "#clientes" },
-    { label: "Proyectos", href: "/proyectos" },
+    { label: "Soluciones", href: "/#soluciones" },
+  { label: "Metodología", href: "/#metodologia" },
+  { label: "Plataformas", href: "/#plataformas" },
+  { label: "Clientes", href: "/#clientes" },
+  { label: "Proyectos", href: "/proyectos" },
   ];
 
   return (
