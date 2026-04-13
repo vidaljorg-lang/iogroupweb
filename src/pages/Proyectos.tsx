@@ -106,12 +106,13 @@ const Proyectos = () => {
         className="bg-white rounded-xl shadow-md hover:shadow-xl transition cursor-pointer border-b-4 border-orange-500"
         onClick={() => setVideoActivo(p.video)}
       >
-        <img
-          src={p.imagen}
-          alt={p.titulo}
-          className="rounded-t-xl w-full h-56 object-cover"
-        />
-
+<div className="aspect-video overflow-hidden group rounded-t-xl">
+  <img
+    src={p.imagen}
+    alt={p.titulo}
+    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+  />
+</div>
         <div className="p-4">
           <p className="font-semibold">{p.titulo}</p>
         </div>
