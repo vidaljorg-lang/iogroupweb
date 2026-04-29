@@ -71,10 +71,10 @@ const Proyectos = () => {
 
   return (
     <div className="min-h-screen bg-black text-white">
-<Header active="proyectos" />
-      
+      <Header active="proyectos" />
+
       {/* HEADER */}
-<div className="text-center pt-24 pb-16 px-6">
+      <div className="text-center pt-24 pb-16 px-6">
         <h1 className="text-4xl font-bold mb-4">Nuestros Proyectos</h1>
         <p className="max-w-2xl mx-auto text-gray-600">
           Descubre algunos de nuestros casos, experiencias y soluciones desarrolladas para nuestros clientes.
@@ -99,56 +99,52 @@ const Proyectos = () => {
       </div>
 
       {/* HERO + ROW */}
-<div className="max-w-7xl mx-auto px-6 pb-20">
+      <div className="max-w-7xl mx-auto px-6 pb-20">
 
-  {/* HERO */}
-  <div className="flex flex-col lg:flex-row gap-10 items-center mb-12">
+        {/* HERO */}
+        <div className="flex flex-col lg:flex-row gap-10 items-center mb-12">
 
-    <div className="w-full lg:w-2/3">
-      <iframe
-src={proyectosFiltrados[0]?.video}
-        className="w-full h-[400px] rounded-xl"
-        allow="autoplay; fullscreen"
-      />
-    </div>
+          <div className="w-full lg:w-2/3">
+            <iframe
+              src={proyectosFiltrados[0]?.video}
+              className="w-full h-[400px] rounded-xl"
+              allow="autoplay; fullscreen"
+            />
+          </div>
 
-    <div className="w-full lg:w-1/3">
-      <h2 className="text-3xl font-bold mb-4">
-{proyectosFiltrados[0]?.titulo || "Proyecto"}
-      </h2>
-      <p className="text-gray-400">
-        Descripción del proyecto. Aquí puedes explicar qué se hizo, impacto, cliente, etc.
-      </p>
-    </div>
+          <div className="w-full lg:w-1/3">
+            <h2 className="text-3xl font-bold mb-4">
+              {proyectosFiltrados[0]?.titulo || "Proyecto"}
+            </h2>
+            <p className="text-gray-400">
+              Descripción del proyecto. Aquí puedes explicar qué se hizo, impacto, cliente, etc.
+            </p>
+          </div>
 
-  </div>
-
-  {/* ROW */}
-  <div className="flex gap-6 overflow-x-auto pb-4">
-
-    {proyectosFiltrados.map((p, i) => (
-      <div
-        key={i}
-        className="min-w-[220px] cursor-pointer group"
-      >
-        <div className="rounded-lg overflow-hidden">
-          <img
-            src={p.imagen}
-            className="w-full h-[130px] object-cover group-hover:scale-105 transition"
-          />
         </div>
-        <p className="mt-2 text-sm group-hover:text-orange-500">
-          {p.titulo}
-        </p>
+
+        {/* ROW */}
+        <div className="flex gap-6 overflow-x-auto pb-4">
+          {proyectosFiltrados.map((p, i) => (
+            <div
+              key={i}
+              className="min-w-[220px] cursor-pointer group"
+              onClick={() => setVideoActivo(p.video)}
+            >
+              <div className="rounded-lg overflow-hidden">
+                <img
+                  src={p.imagen}
+                  className="w-full h-[130px] object-cover group-hover:scale-105 transition"
+                />
+              </div>
+              <p className="mt-2 text-sm group-hover:text-orange-500">
+                {p.titulo}
+              </p>
+            </div>
+          ))}
+        </div>
+
       </div>
-    ))}
-
-  </div>
-
-</div>
-
-  </div>
-
 
       {/* MODAL */}
       {videoActivo && (
@@ -170,6 +166,7 @@ src={proyectosFiltrados[0]?.video}
           </div>
         </div>
       )}
+    </div>
   );
 };
 
