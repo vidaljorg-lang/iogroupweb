@@ -106,7 +106,7 @@ const Proyectos = () => {
 
     <div className="w-full lg:w-2/3">
       <iframe
-        src={proyectosFiltrados[0].video}
+src={proyectosFiltrados[0]?.video}
         className="w-full h-[400px] rounded-xl"
         allow="autoplay; fullscreen"
       />
@@ -114,7 +114,7 @@ const Proyectos = () => {
 
     <div className="w-full lg:w-1/3">
       <h2 className="text-3xl font-bold mb-4">
-        {proyectosFiltrados[0].titulo}
+{proyectosFiltrados[0]?.titulo || "Proyecto"}
       </h2>
       <p className="text-gray-400">
         Descripción del proyecto. Aquí puedes explicar qué se hizo, impacto, cliente, etc.
@@ -146,7 +146,6 @@ const Proyectos = () => {
   </div>
 
 </div>
-    ))}
 
   </div>
 </div>
