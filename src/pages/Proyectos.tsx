@@ -148,7 +148,6 @@ src={proyectosFiltrados[0]?.video}
 </div>
 
   </div>
-</div>
 
       {/* MODAL */}
       {videoActivo && (
