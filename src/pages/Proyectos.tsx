@@ -70,7 +70,7 @@ const Proyectos = () => {
       : proyectos.filter(p => p.categoria === categoriaActiva);
 
   return (
-    <div className="min-h-screen bg-white text-gray-800">
+    <div className="min-h-screen bg-black text-white">
 <Header active="proyectos" />
       
       {/* HEADER */}
@@ -98,27 +98,54 @@ const Proyectos = () => {
         ))}
       </div>
 
-      {/* GRID */}
-      <div className="max-w-6xl mx-auto px-6 pb-20">
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      {/* HERO + ROW */}
+<div className="max-w-7xl mx-auto px-6 pb-20">
+
+  {/* HERO */}
+  <div className="flex flex-col lg:flex-row gap-10 items-center mb-12">
+
+    <div className="w-full lg:w-2/3">
+      <iframe
+        src={proyectosFiltrados[0].video}
+        className="w-full h-[400px] rounded-xl"
+        allow="autoplay; fullscreen"
+      />
+    </div>
+
+    <div className="w-full lg:w-1/3">
+      <h2 className="text-3xl font-bold mb-4">
+        {proyectosFiltrados[0].titulo}
+      </h2>
+      <p className="text-gray-400">
+        Descripción del proyecto. Aquí puedes explicar qué se hizo, impacto, cliente, etc.
+      </p>
+    </div>
+
+  </div>
+
+  {/* ROW */}
+  <div className="flex gap-6 overflow-x-auto pb-4">
 
     {proyectosFiltrados.map((p, i) => (
       <div
         key={i}
-        className="bg-white rounded-xl shadow-md hover:shadow-xl transition cursor-pointer border-b-4 border-orange-500"
-        onClick={() => setVideoActivo(p.video)}
+        className="min-w-[220px] cursor-pointer group"
       >
-<div className="aspect-video overflow-hidden group rounded-t-xl">
-  <img
-    src={p.imagen}
-    alt={p.titulo}
-    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-  />
-</div>
-        <div className="p-4">
-          <p className="font-semibold">{p.titulo}</p>
+        <div className="rounded-lg overflow-hidden">
+          <img
+            src={p.imagen}
+            className="w-full h-[130px] object-cover group-hover:scale-105 transition"
+          />
         </div>
+        <p className="mt-2 text-sm group-hover:text-orange-500">
+          {p.titulo}
+        </p>
       </div>
+    ))}
+
+  </div>
+
+</div>
     ))}
 
   </div>
