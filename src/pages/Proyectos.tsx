@@ -3,62 +3,65 @@ import { useState } from "react";
 
 const Proyectos = () => {
   const [categoriaActiva, setCategoriaActiva] = useState("Todos");
-  const [videoActivo, setVideoActivo] = useState<string | null>(null);
 
   const categorias = ["Todos", "E-learning", "IA", "Videos"];
 
   const proyectos = [
     {
-      titulo: "Proyecto 1",
+      titulo: 'Curso e-learning: "Trabajo en Alturas"',
       categoria: "E-learning",
-      imagen: "https://images.unsplash.com/photo-1557804506-669a67965ba0",
+      imagen: "/images/proyecto1.jpg",
       video: "https://player.vimeo.com/video/76979871",
-      descripcion: "Capacitación corporativa enfocada en habilidades digitales."
+      descripcion: `Formación técnica integral centrada en el dominio de herramientas, sistemas de anclaje y protocolos de seguridad crítica. El programa permite a los colaboradores reconocer riesgos del entorno y aplicar medidas preventivas rigurosas bajo estándares normativos vigentes.
+
+Impacto en la Operación: Asegura el cumplimiento legal (compliance) y reduce significativamente la probabilidad de incidentes de alto potencial. Al digitalizar la teoría mediante casos prácticos, el trabajador eleva su competencia técnica antes de la ejecución en terreno, optimizando los tiempos de supervisión y la seguridad operativa.`
     },
     {
-      titulo: "Proyecto 2",
+      titulo: 'Curso e-learning: "Comité Paritario de Higiene y Seguridad (CPHS)"',
       categoria: "E-learning",
-      imagen: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f",
+      imagen: "/images/proyecto2.jpg",
       video: "https://player.vimeo.com/video/22439234",
-      descripcion: "Programa de formación online para equipos comerciales."
+      descripcion: `Solución formativa diseñada para profesionalizar la gestión de los miembros del comité. El programa abarca desde el marco legal y normativo hasta metodologías avanzadas para la investigación de incidentes y detección de brechas de seguridad.
+
+Impacto en la Operación: Fomenta una cultura preventiva autónoma y proactiva. Su implementación se traduce en una gestión más eficiente de los riesgos internos y mejora la trazabilidad de las acciones correctivas, facilitando el cumplimiento ante las auditorías de organismos administradores.`
     },
     {
-      titulo: "Proyecto 3",
-      categoria: "IA",
-      imagen: "https://images.unsplash.com/photo-1518770660439-4636190af475",
+      titulo: 'Curso e-learning: "Falabella SAC"',
+      categoria: "E-learning",
+      imagen: "/images/proyecto3.jpg",
       video: "https://player.vimeo.com/video/76979871",
-      descripcion: "Solución de inteligencia artificial aplicada a procesos internos."
+      descripcion: `Diseño de una trayectoria de aprendizaje ágil centrada en la estandarización de la experiencia de marca. El curso dota al personal de herramientas para la resolución de conflictos y la gestión de la atención en diversos canales de contacto.
+
+Impacto en la Operación: Incremento medible en los índices de satisfacción del cliente (NPS) y optimización del desempeño de la primera línea. Al reducir los tiempos de resolución y fortalecer la resiliencia del equipo, se logra disminuir el agotamiento emocional y la rotación de personal.`
     },
     {
-      titulo: "Proyecto 4",
-      categoria: "IA",
-      imagen: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d",
-      video: "https://player.vimeo.com/video/22439234",
-      descripcion: "Automatización inteligente de flujos de trabajo empresariales."
-    },
-    {
-      titulo: "Proyecto 5",
+      titulo: 'Videoanimación: "Me Cuido en Casa" (Gestión REAS)',
       categoria: "Videos",
-      imagen: "https://images.unsplash.com/photo-1492724441997-5dc865305da7",
+      imagen: "/images/proyecto4.jpg",
+      video: "https://player.vimeo.com/video/22439234",
+      descripcion: `Cápsula audiovisual de alta claridad pedagógica enfocada en la instrucción técnica para la segregación, transporte y disposición final de Residuos de Establecimientos de Atención de Salud (REAS).
+
+Impacto en la Operación: Mitigación crítica de riesgos biológicos para el personal operativo de aseo. La simplificación de protocolos complejos a través de la animación garantiza que el conocimiento sea transversal a todos los niveles, asegurando estándares sanitarios y evitando sanciones administrativas.`
+    },
+    {
+      titulo: 'Videoanimación: "La Voz que Educa"',
+      categoria: "Videos",
+      imagen: "/images/proyecto5.jpg",
       video: "https://player.vimeo.com/video/76979871",
-      descripcion: "Producción audiovisual para campañas digitales."
-    },
-    {
-      titulo: "Proyecto 6",
-      categoria: "Videos",
-      imagen: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
-      video: "https://player.vimeo.com/video/22439234",
-      descripcion: "Video corporativo enfocado en branding y posicionamiento."
+      descripcion: `Campaña audiovisual estratégica orientada a la prevención de patologías vocales en docentes. El recurso identifica factores de riesgo ocupacionales, ambientales y personales, entregando técnicas de cuidado para el uso profesional de la voz.
+
+Impacto en la Operación: Fortalece la salud ocupacional y la continuidad pedagógica al reducir el ausentismo laboral por disfonías. Al involucrar el liderazgo escolar en la prevención, se crea un entorno de trabajo sostenible que reconoce la voz como la herramienta productiva fundamental del docente.`
     }
   ];
+
+  const [videoActivo, setVideoActivo] = useState(proyectos[0].video);
 
   const proyectosFiltrados =
     categoriaActiva === "Todos"
       ? proyectos
       : proyectos.filter(p => p.categoria === categoriaActiva);
 
-  const proyectoActivo =
-    proyectos.find(p => p.video === videoActivo) || proyectosFiltrados[0];
+  const proyectoActivo = proyectos.find(p => p.video === videoActivo);
 
   return (
     <div className="min-h-screen bg-black text-white">
@@ -89,13 +92,15 @@ const Proyectos = () => {
         ))}
       </div>
 
-      {/* HERO + GRID */}
+      {/* CONTENIDO */}
       <div className="max-w-7xl mx-auto px-6 pb-20">
+
         {/* HERO */}
         <div className="flex flex-col lg:flex-row gap-10 items-center mb-12">
+
           <div className="w-full lg:w-2/3">
             <iframe
-              src={proyectoActivo?.video}
+              src={videoActivo}
               className="w-full h-[400px] rounded-xl"
               allow="autoplay; fullscreen"
             />
@@ -103,22 +108,25 @@ const Proyectos = () => {
 
           <div className="w-full lg:w-1/3">
             <h2 className="text-3xl font-bold mb-4">
-              {proyectoActivo?.titulo || "Proyecto"}
+              {proyectoActivo?.titulo}
             </h2>
 
-            <p className="text-gray-400">
-              {proyectoActivo?.descripcion || "Descripción del proyecto."}
+            <p className="text-gray-400 whitespace-pre-line">
+              {proyectoActivo?.descripcion}
             </p>
           </div>
+
         </div>
 
-        {/* GRID */}
+        {/* ROW */}
         <div className="flex gap-6 overflow-x-auto pb-4">
           {proyectosFiltrados.map((p, i) => (
             <div
               key={i}
               onClick={() => setVideoActivo(p.video)}
-              className="min-w-[220px] cursor-pointer group"
+              className={`min-w-[220px] cursor-pointer group ${
+                videoActivo === p.video ? "ring-2 ring-orange-500" : ""
+              }`}
             >
               <div className="rounded-lg overflow-hidden">
                 <img
@@ -133,6 +141,7 @@ const Proyectos = () => {
             </div>
           ))}
         </div>
+
       </div>
     </div>
   );
