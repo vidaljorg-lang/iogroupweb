@@ -1,7 +1,7 @@
 const Hero = () => {
   return (
     <div className="relative overflow-hidden bg-gray-50">
-      <div className="max-w-7xl mx-auto px-6 min-h-[90vh] flex items-center">
+      <div className="max-w-7xl mx-auto px-6 py-16 lg:min-h-[90vh] flex items-center">
         
         <div className="grid lg:grid-cols-2 gap-10 items-center w-full">
           
