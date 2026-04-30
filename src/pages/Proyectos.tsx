@@ -22,7 +22,7 @@ const Proyectos = () => {
         'Curso e-learning: "Comité Paritario de Higiene y Seguridad (CPHS)"',
       categoria: "E-learning",
       imagen: "/images/proyecto-cphs.jpg",
-      video: "https://player.vimeo.com/video/22439234",
+      video: "https://player.vimeo.com/video/1187946420",
       proyecto:
         "Solución formativa diseñada para profesionalizar la gestión de los miembros del comité. El programa abarca desde el marco legal y normativo hasta metodologías avanzadas para la investigación de incidentes y detección de brechas de seguridad.",
       impacto:
@@ -33,7 +33,7 @@ const Proyectos = () => {
       titulo: 'Curso e-learning: "Conducción a la Defensiva"',
       categoria: "E-learning",
       imagen: "/images/proyecto-conduccion.jpg",
-      video: "https://player.vimeo.com/video/76979871",
+      video: "https://player.vimeo.com/video/1187946432",
       proyecto:
         "Instancia de aprendizaje técnico-práctica diseñada para entregar herramientas de conducción eficiente. El programa profundiza en la normativa legal vigente, la identificación de factores de riesgo en la vía y los protocolos de seguridad ante condiciones climáticas adversas.",
       impacto:
@@ -44,7 +44,7 @@ const Proyectos = () => {
       titulo: 'Curso e-learning: "Falabella SAC"',
       categoria: "E-learning",
       imagen: "/images/proyecto-falabella.jpg",
-      video: "https://player.vimeo.com/video/22439234",
+      video: "https://player.vimeo.com/video/1187946455",
       proyecto:
         "Diseño de una trayectoria de aprendizaje ágil centrada en la estandarización de la experiencia de marca. El curso dota al personal de herramientas clave para la resolución de conflictos y la gestión de la atención con excelencia en diversos canales de contacto.",
       impacto:
@@ -52,10 +52,10 @@ const Proyectos = () => {
     },
     {
       id: 5,
-      titulo: 'Videoanimación: "Me Cuido en Casa" (Gestión REAS)',
+      titulo: 'Videoanimación: "Los Cuido en Casa" (Gestión REAS)',
       categoria: "Videos",
       imagen: "/images/proyecto-cuido.jpg",
-      video: "https://player.vimeo.com/video/76979871",
+      video: "https://player.vimeo.com/video/1187946525",
       proyecto:
         "Cápsula audiovisual de alta claridad pedagógica enfocada en la instrucción técnica para la segregación, transporte y disposición final de Residuos de Establecimientos de Atención de Salud (REAS).",
       impacto:
@@ -66,7 +66,7 @@ const Proyectos = () => {
       titulo: 'Videoanimación: "La Voz que Educa"',
       categoria: "Videos",
       imagen: "/images/proyecto-voz.jpg",
-      video: "https://player.vimeo.com/video/22439234",
+      video: "https://player.vimeo.com/video/1187946469",
       proyecto:
         "Campaña audiovisual estratégica orientada a la prevención de patologías vocales en docentes. El recurso identifica factores de riesgo ocupacionales y ambientales, entregando técnicas de cuidado profesional para la herramienta de trabajo fundamental en el aula.",
       impacto:
