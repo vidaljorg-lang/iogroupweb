@@ -38,16 +38,23 @@ const Footer = () => {
               omarw@iogroupchile.com
             </a>
 
-            <a
-              href="https://wa.me/56999099469"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-green-500 text-white text-sm font-medium px-4 py-2 rounded-md hover:bg-green-600 transition-colors"
-            >
-              ¡Hablemos por WhatsApp!
-            </a>
-
           </div>
+
+          {/* BOTÓN WHATSAPP */}
+          <a
+            href="https://wa.me/56999099469"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-green-500 text-white text-sm font-medium px-5 py-2.5 rounded-md hover:bg-green-600 transition-colors"
+          >
+            ¡Hablemos por WhatsApp!
+          </a>
+
+          {/* DIRECCIÓN */}
+          <p className="text-sm text-muted-foreground max-w-xs">
+            Av. Nueva de Lyon 72 · Piso 18 · Providencia · Santiago · Chile
+          </p>
+
         </div>
 
         {/* COPYRIGHT */}
