@@ -77,7 +77,7 @@ Impacto en la Operaci√≥n: Fortalece la salud ocupacional y la continuidad pedag√
       <Header active="proyectos" />
 
       {/* HEADER */}
-      <div className="text-center pt-24 pb-16 px-6">
+      <div className="text-center pt-24 pb-12 px-6">
         <h1 className="text-4xl font-bold mb-4">Nuestros Proyectos</h1>
         <p className="max-w-2xl mx-auto text-gray-400">
           Descubre algunos de nuestros casos, experiencias y soluciones desarrolladas para nuestros clientes.
@@ -101,57 +101,63 @@ Impacto en la Operaci√≥n: Fortalece la salud ocupacional y la continuidad pedag√
         ))}
       </div>
 
-      {/* CONTENIDO */}
-      <div className="max-w-7xl mx-auto px-6 pb-20">
-
-        {/* HERO */}
-        <div className="flex flex-col lg:flex-row gap-10 items-center mb-12">
+      {/* HERO */}
+      <div className="max-w-7xl mx-auto px-6 mb-16">
+        <div className="flex flex-col lg:flex-row gap-10">
 
           <div className="w-full lg:w-2/3">
             <iframe
               src={videoActivo}
-              className="w-full h-[400px] rounded-xl"
+              className="w-full aspect-video rounded-xl"
               allow="autoplay; fullscreen"
             />
           </div>
 
           <div className="w-full lg:w-1/3">
-            <h2 className="text-3xl font-bold mb-4">
+            <h2 className="text-2xl lg:text-3xl font-bold mb-4">
               {proyectoActivo?.titulo}
             </h2>
 
-            <p className="text-gray-400 whitespace-pre-line">
+            <p className="text-gray-400 whitespace-pre-line text-sm lg:text-base">
               {proyectoActivo?.descripcion}
             </p>
           </div>
 
         </div>
+      </div>
 
-        {/* ROW */}
-        <div className="flex gap-6 overflow-x-auto pb-4">
+      {/* GRID FIJO */}
+      <div className="max-w-7xl mx-auto px-6 pb-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
           {proyectosFiltrados.map((p, i) => (
             <div
               key={i}
               onClick={() => setVideoActivo(p.video)}
-              className={`min-w-[220px] cursor-pointer group ${
-                videoActivo === p.video ? "ring-2 ring-orange-500" : ""
+              className={`cursor-pointer rounded-xl overflow-hidden border transition hover:scale-[1.02] ${
+                videoActivo === p.video
+                  ? "border-orange-500"
+                  : "border-gray-800"
               }`}
             >
-              <div className="rounded-lg overflow-hidden">
+              <div className="aspect-video overflow-hidden">
                 <img
                   src={p.imagen}
-                  className="w-full h-[130px] object-cover group-hover:scale-105 transition"
+                  className="w-full h-full object-cover"
                 />
               </div>
 
-              <p className="mt-2 text-sm group-hover:text-orange-500">
-                {p.titulo}
-              </p>
+              <div className="p-4">
+                <p className="font-semibold text-sm">
+                  {p.titulo}
+                </p>
+              </div>
             </div>
           ))}
-        </div>
 
+        </div>
       </div>
+
     </div>
   );
 };
