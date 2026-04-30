@@ -16,7 +16,7 @@ const Propuesta = () => {
           <div>
             <h2 className="section-title mb-6">Capacitación diseñada para generar desempeño</h2>
             <p className="section-subtitle">
-              IO Group diseña estrategias de capacitación orientadas a resultados. Partimos desde las brechas de desempeño reales de los roles dentro de la organización y las convertimos en acciones prácticas de aprendizaje.
+              En IO Group diseñamos estrategias de capacitación orientadas a resultados. Partimos desde las brechas de desempeño reales de los roles dentro de la organización y las convertimos en acciones prácticas de aprendizaje.
             </p>
           </div>
           <div className="flex items-center justify-center">
