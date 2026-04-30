@@ -15,7 +15,7 @@ const Metodologia = () => {
           <div>
             <h2 className="section-title mb-6">Metodología: aprender haciendo</h2>
             <p className="section-subtitle mb-12">
-              Utilizamos el enfoque de Action Mapping para diseñar capacitaciones orientadas a la acción y al desempeño real en el puesto de trabajo.
+              Aplicamos el enfoque Action Mapping para diseñar capacitaciones centradas en la acción y el desempeño, generando un impacto real en el puesto de trabajo y contribuyendo directamente al cumplimiento de los objetivos del negocio.
             </p>
             <div className="space-y-8">
               {steps.map((step) => (
