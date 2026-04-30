@@ -12,7 +12,7 @@ const Hero = () => {
             </p>
 
             <h1 className="text-5xl lg:text-6xl font-bold leading-tight mb-6">
-              Soluciones de capacitación corporativa para tu capital humano.
+              Soluciones de capacitación corporativa para tu capital humano
             </h1>
 
             <p className="text-gray-600 text-lg mb-6 max-w-lg">
@@ -20,7 +20,7 @@ const Hero = () => {
             </p>
 
             <p className="text-gray-500 text-sm mb-8 max-w-md">
-              IO Group acompaña a las áreas de RRHH en el diseño e implementación de soluciones formativas orientadas al desempeño laboral.
+              En IO Group acompañamos a las áreas de RRHH en el diseño e implementación de soluciones formativas orientadas al desempeño laboral.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
