@@ -25,11 +25,11 @@ const Innovacion = () => {
             <h2 className="section-title mb-6">Innovación en inteligencia artificial aplicada al e-learning</h2>
             <p className="section-subtitle">
               <p className="text-muted-foreground max-w-xl">
-  Utilizamos inteligencia artificial para potenciar el análisis y diseño instruccional creado por nuestros expertos, dando como resultado experiencias de aprendizaje fuertemente alineadas a los desafíos organizacionales.
+  Utilizamos inteligencia artificial para potenciar el análisis y diseño instruccional desarrollado por nuestros expertos, optimizando tiempos de entrega, reduciendo costos y elevando la calidad de las experiencias de aprendizaje.
 </p>
 
 <p className="text-muted-foreground max-w-xl mt-3">
-  Esto nos permite desarrollar soluciones estratégicas que aseguran resultados concretos y sostenibles para las áreas de formación.
+  Esto se traduce en menor tiempo de desarrollo, optimización de recursos y una mejora sostenida en la calidad de la capacitación.
 </p>
             </p>
           </div>
