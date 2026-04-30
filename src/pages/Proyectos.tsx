@@ -10,7 +10,7 @@ const Proyectos = () => {
       titulo: 'Curso e-learning: "Trabajo en Alturas"',
       categoria: "E-learning",
       imagen: "/images/proyecto-alturas.jpg",
-      video: "https://player.vimeo.com/video/76979871",
+      video: "https://player.vimeo.com/video/1187946500",
       proyecto:
         "Formación técnica integral centrada en el dominio de herramientas, sistemas de anclaje y protocolos de seguridad crítica. El programa permite a los colaboradores reconocer riesgos del entorno y aplicar medidas preventivas rigurosas bajo estándares normativos vigentes.",
       impacto:
