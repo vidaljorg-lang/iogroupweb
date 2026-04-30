@@ -45,6 +45,8 @@ const Soluciones = () => {
 
         {/* Header */}
         <div className="grid md:grid-cols-[2fr_3fr] gap-12 items-center mb-16">
+          
+          {/* Texto */}
           <div>
             <h2 className="section-title mb-6">Nuestras soluciones</h2>
             <p className="section-subtitle">
@@ -52,23 +54,25 @@ const Soluciones = () => {
             </p>
           </div>
 
+          {/* 🔥 IMPORTANTE: tu imagen original (NO cambiada) */}
           <div className="flex items-center justify-center">
             <img
-              src="/images/solucion-elearning.jpg"
+              src="/assets/soluciones-visual.png"
               alt="Soluciones de capacitación"
-              className="w-full max-w-2xl rounded-2xl shadow-md"
+              className="w-full max-w-2xl rounded-2xl shadow-md object-cover"
             />
           </div>
         </div>
 
         {/* Cards */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
 
           {solutions.map((sol) => (
             <div
               key={sol.title}
               className="bg-background rounded-2xl overflow-hidden border border-border hover:shadow-xl transition-all duration-300 group flex flex-col"
             >
+              
               {/* Imagen */}
               <div className="overflow-hidden">
                 <img
