@@ -50,8 +50,6 @@ const Hero = () => {
                 className="w-full h-full object-cover rounded-2xl shadow-2xl"
               />
 
-              {/* OVERLAY SUAVE */}
-              <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-gray-50 via-gray-50/60 to-transparent"></div>
             </div>
           </div>
 
