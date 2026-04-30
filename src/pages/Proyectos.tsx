@@ -4,53 +4,62 @@ import { useState } from "react";
 const Proyectos = () => {
   const [categoriaActiva, setCategoriaActiva] = useState("Todos");
 
-  const categorias = ["Todos", "E-learning", "IA", "Videos"];
+  const categorias = ["Todos", "E-learning", "Videos"];
 
   const proyectos = [
     {
       titulo: 'Curso e-learning: "Trabajo en Alturas"',
       categoria: "E-learning",
-      imagen: "/images/proyecto1.jpg",
+      imagen: "/images/proyecto-alturas.jpg",
       video: "https://player.vimeo.com/video/76979871",
-      descripcion: `Formación técnica integral centrada en el dominio de herramientas, sistemas de anclaje y protocolos de seguridad crítica. El programa permite a los colaboradores reconocer riesgos del entorno y aplicar medidas preventivas rigurosas bajo estándares normativos vigentes.
+      descripcion: `El Proyecto: Formación técnica integral centrada en el dominio de herramientas, sistemas de anclaje y protocolos de seguridad crítica. El programa permite a los colaboradores reconocer riesgos del entorno y aplicar medidas preventivas rigurosas bajo estándares normativos vigentes.
 
 Impacto en la Operación: Asegura el cumplimiento legal (compliance) y reduce significativamente la probabilidad de incidentes de alto potencial. Al digitalizar la teoría mediante casos prácticos, el trabajador eleva su competencia técnica antes de la ejecución en terreno, optimizando los tiempos de supervisión y la seguridad operativa.`
     },
     {
       titulo: 'Curso e-learning: "Comité Paritario de Higiene y Seguridad (CPHS)"',
       categoria: "E-learning",
-      imagen: "/images/proyecto2.jpg",
+      imagen: "/images/proyecto-cphs.jpg",
       video: "https://player.vimeo.com/video/22439234",
-      descripcion: `Solución formativa diseñada para profesionalizar la gestión de los miembros del comité. El programa abarca desde el marco legal y normativo hasta metodologías avanzadas para la investigación de incidentes y detección de brechas de seguridad.
+      descripcion: `El Proyecto: Solución formativa diseñada para profesionalizar la gestión de los miembros del comité. El programa abarca desde el marco legal y normativo hasta metodologías avanzadas para la investigación de incidentes y detección de brechas de seguridad.
 
 Impacto en la Operación: Fomenta una cultura preventiva autónoma y proactiva. Su implementación se traduce en una gestión más eficiente de los riesgos internos y mejora la trazabilidad de las acciones correctivas, facilitando el cumplimiento ante las auditorías de organismos administradores.`
     },
     {
+      titulo: 'Curso e-learning: "Conducción a la Defensiva"',
+      categoria: "E-learning",
+      imagen: "/images/proyecto-conduccion.jpg",
+      video: "https://player.vimeo.com/video/76979871",
+      descripcion: `El Proyecto: Instancia de aprendizaje técnico-práctica diseñada para entregar herramientas de conducción eficiente. El programa profundiza en la normativa legal vigente, la identificación de factores de riesgo en la vía y los protocolos de seguridad ante condiciones climáticas adversas.
+
+Impacto en la Operación: Transforma la conducta del conductor posicionándolo como el agente principal en la prevención de siniestros. Reduce la accidentabilidad y los costos operativos mediante el reconocimiento de los sistemas de seguridad del vehículo y la mitigación de factores críticos, garantizando traslados más seguros y eficientes.`
+    },
+    {
       titulo: 'Curso e-learning: "Falabella SAC"',
       categoria: "E-learning",
-      imagen: "/images/proyecto3.jpg",
-      video: "https://player.vimeo.com/video/76979871",
-      descripcion: `Diseño de una trayectoria de aprendizaje ágil centrada en la estandarización de la experiencia de marca. El curso dota al personal de herramientas para la resolución de conflictos y la gestión de la atención en diversos canales de contacto.
+      imagen: "/images/proyecto-falabella.jpg",
+      video: "https://player.vimeo.com/video/22439234",
+      descripcion: `El Proyecto: Diseño de una trayectoria de aprendizaje ágil centrada en la estandarización de la experiencia de marca. El curso dota al personal de herramientas clave para la resolución de conflictos y la gestión de la atención con excelencia en diversos canales de contacto.
 
-Impacto en la Operación: Incremento medible en los índices de satisfacción del cliente (NPS) y optimización del desempeño de la primera línea. Al reducir los tiempos de resolución y fortalecer la resiliencia del equipo, se logra disminuir el agotamiento emocional y la rotación de personal.`
+Impacto en la Operación: Incremento medible en los índices de satisfacción del cliente (NPS) y optimización del desempeño de la primera línea. Al fortalecer la resiliencia del equipo y entregar protocolos claros, se logra disminuir el agotamiento emocional y la rotación de personal.`
     },
     {
       titulo: 'Videoanimación: "Me Cuido en Casa" (Gestión REAS)',
       categoria: "Videos",
-      imagen: "/images/proyecto4.jpg",
-      video: "https://player.vimeo.com/video/22439234",
-      descripcion: `Cápsula audiovisual de alta claridad pedagógica enfocada en la instrucción técnica para la segregación, transporte y disposición final de Residuos de Establecimientos de Atención de Salud (REAS).
+      imagen: "/images/proyecto-cuido.jpg",
+      video: "https://player.vimeo.com/video/76979871",
+      descripcion: `El Proyecto: Cápsula audiovisual de alta claridad pedagógica enfocada en la instrucción técnica para la segregación, transporte y disposición final de Residuos de Establecimientos de Atención de Salud (REAS).
 
 Impacto en la Operación: Mitigación crítica de riesgos biológicos para el personal operativo de aseo. La simplificación de protocolos complejos a través de la animación garantiza que el conocimiento sea transversal a todos los niveles, asegurando estándares sanitarios y evitando sanciones administrativas.`
     },
     {
       titulo: 'Videoanimación: "La Voz que Educa"',
       categoria: "Videos",
-      imagen: "/images/proyecto5.jpg",
-      video: "https://player.vimeo.com/video/76979871",
-      descripcion: `Campaña audiovisual estratégica orientada a la prevención de patologías vocales en docentes. El recurso identifica factores de riesgo ocupacionales, ambientales y personales, entregando técnicas de cuidado para el uso profesional de la voz.
+      imagen: "/images/proyecto-voz.jpg",
+      video: "https://player.vimeo.com/video/22439234",
+      descripcion: `El Proyecto: Campaña audiovisual estratégica orientada a la prevención de patologías vocales en docentes. El recurso identifica factores de riesgo ocupacionales y ambientales, entregando técnicas de cuidado profesional para la herramienta de trabajo fundamental en el aula.
 
-Impacto en la Operación: Fortalece la salud ocupacional y la continuidad pedagógica al reducir el ausentismo laboral por disfonías. Al involucrar el liderazgo escolar en la prevención, se crea un entorno de trabajo sostenible que reconoce la voz como la herramienta productiva fundamental del docente.`
+Impacto en la Operación: Fortalece la salud ocupacional y la continuidad pedagógica al reducir el ausentismo laboral por disfonías. Al involucrar el liderazgo escolar en la prevención, se crea un entorno de trabajo sostenible que protege el bienestar del docente y la calidad de la enseñanza.`
     }
   ];
 
