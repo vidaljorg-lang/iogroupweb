@@ -1,5 +1,8 @@
 import { Monitor, Video, GraduationCap, Users, FileText } from "lucide-react";
 
+// ✅ IMPORT REAL (esto es la clave)
+import solucionesImg from "@/assets/soluciones-visual.png";
+
 const solutions = [
   {
     title: "Cursos e-learning a medida",
@@ -54,10 +57,10 @@ const Soluciones = () => {
             </p>
           </div>
 
-          {/* 🔥 IMPORTANTE: tu imagen original (NO cambiada) */}
+          {/* ✅ Imagen correcta */}
           <div className="flex items-center justify-center">
             <img
-              src="/assets/soluciones-visual.png"
+              src={solucionesImg}
               alt="Soluciones de capacitación"
               className="w-full max-w-2xl rounded-2xl shadow-md object-cover"
             />
