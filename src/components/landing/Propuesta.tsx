@@ -5,7 +5,7 @@ const items = [
   { icon: Target, title: "Identificación de brechas de desempeño", description: "Analizamos los roles y detectamos las brechas reales que impactan la productividad." },
   { icon: Eye, title: "Conversión en acciones observables", description: "Transformamos las brechas en comportamientos medibles y acciones concretas." },
   { icon: Briefcase, title: "Aprendizaje aplicado al trabajo", description: "Diseñamos experiencias formativas que se aplican directamente en el puesto de trabajo." },
-  { icon: BarChart3, title: "Alineación a objetivos organizacionales", description: "Cada acción de aprendizaje responde a las metas estratégicas de la empresa." },
+  { icon: BarChart3, title: "Alineación con los objetivos organizacionales", description: "Cada acción de aprendizaje responde a las metas estratégicas de la empresa." },
 ];
 
 const Propuesta = () => {
