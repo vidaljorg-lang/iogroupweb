@@ -22,7 +22,7 @@ const ComoTrabajamos = () => {
             />
           </div>
           <div>
-            <h2 className="section-title mb-6">Acompañamos todo el ciclo de capacitación</h2>
+            <h2 className="section-title mb-6">Acompañamos integralmente todo el ciclo de capacitación</h2>
             <p className="section-subtitle">
               Trabajamos de la mano con los equipos de RRHH en cada etapa del proceso formativo.
             </p>
