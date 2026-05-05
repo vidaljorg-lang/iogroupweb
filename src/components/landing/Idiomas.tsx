@@ -15,7 +15,7 @@ const Idiomas = () => {
       <div className="section-container">
         <div className="grid md:grid-cols-[2fr_3fr] gap-12 items-center mb-16">
           <div>
-            <h2 className="section-title mb-6">Programas de idiomas para el desarrollo del talento</h2>
+            <h2 className="section-title mb-6">Programas de idiomas para el desarrollo profesional</h2>
             <p className="section-subtitle">
               Programas de idiomas corporativos diseñados para potenciar las competencias comunicativas de tus equipos en un entorno global.
             </p>
