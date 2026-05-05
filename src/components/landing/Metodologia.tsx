@@ -1,10 +1,10 @@
 import metodologiaVisual from "@/assets/metodologia-visual.png";
 
 const steps = [
-  { number: "01", title: "Meta de desempeño", description: "Definimos el resultado de negocio que la capacitación debe impactar." },
+  { number: "01", title: "Meta de desempeño", description: "Definimos el resultado de negocio que la capacitación debe impulsar." },
   { number: "02", title: "Acciones clave", description: "Identificamos las acciones que las personas deben realizar para alcanzar la meta." },
-  { number: "03", title: "Práctica", description: "Diseñamos actividades de práctica realistas que replican el contexto laboral." },
-  { number: "04", title: "Información de apoyo", description: "Proporcionamos solo la información necesaria para ejecutar las acciones." },
+  { number: "03", title: "Práctica", description: "Diseñamos experiencias de prácticas realistas que simulan el contexto laboral." },
+  { number: "04", title: "Información de apoyo", description: "Proporcionamos la información clave y necesaria para ejecutar las acciones." },
 ];
 
 const Metodologia = () => {
