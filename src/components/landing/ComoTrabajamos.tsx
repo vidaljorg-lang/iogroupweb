@@ -3,8 +3,8 @@ import cicloVisual from "@/assets/ciclo-visual.png";
 
 const steps = [
   { icon: Search, number: "1", title: "Diagnóstico de necesidades", description: "Identificamos las brechas de desempeño y las necesidades formativas." },
-  { icon: PenTool, number: "2", title: "Diseño instruccional", description: "Diseñamos la estrategia pedagógica y la experiencia de aprendizaje." },
-  { icon: Code, number: "3", title: "Desarrollo de contenidos", description: "Producimos los contenidos y materiales formativos." },
+  { icon: PenTool, number: "2", title: "Diseño instruccional", description: "Diseñamos la estrategia metodológica y la experiencia de aprendizaje." },
+  { icon: Code, number: "3", title: "Desarrollo de contenidos", description: "Creamos los contenidos y materiales formativos." },
   { icon: Rocket, number: "4", title: "Implementación", description: "Desplegamos la solución en la plataforma y capacitamos a los equipos." },
   { icon: LineChart, number: "5", title: "Seguimiento y reportabilidad", description: "Monitoreamos resultados y generamos reportes de impacto." },
 ];
